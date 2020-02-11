@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import  '../index.css';
 
 class Task extends Component{
     StyleCompleted(){
@@ -14,7 +15,7 @@ class Task extends Component{
     render(){
         const {task}=this.props;
         return(
-            <div style={this.StyleCompleted()}>
+            <div className="TaskSty" style={this.StyleCompleted()}>
                 {task.title}
                 {task.description}
                 {task.done}

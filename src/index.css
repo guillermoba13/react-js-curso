@@ -1,0 +1,21 @@
+.FormSty{
+    padding-top: 50px;
+    text-align: center;
+    font-family: Arial;
+}
+
+.TaskSty{
+    font-family: Arial;
+    margin: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.Textarea {
+  text-align: center;  
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}

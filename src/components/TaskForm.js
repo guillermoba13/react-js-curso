@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import  '../index.css';
 
 export default class TaskForm extends Component{
     state={
@@ -18,21 +19,27 @@ export default class TaskForm extends Component{
     }
     render(){
         return(
-            <form onSubmit={this.onSubmit}>
-                <input type="text"
+            <form className="FormSty" onSubmit={this.onSubmit}>
+                <input
+                    type="text"
                     name="title" 
-                    placeholder="write a Task" 
+                    placeholder="write a Task:" 
                     onChange={this.onChange} 
                     value={this.state.title}/>
                 <br/>
                 <br/>
-                <textarea placeholder="Write a Description" 
+                <textarea 
+                    className="Textarea" 
+                    placeholder="Write a Description" 
                     name="description"
                     onChange={this.onChange} 
                     value={this.state.description}>
                 </textarea>
-                <input type="submit" />
+                <br/>
+                <br/>
+                <input type="submit"/>
             </form>
         );
     }
 }
+
